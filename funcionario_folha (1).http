@@ -1,0 +1,35 @@
+@base_url = http://localhost:PORTA/api
+
+# FUNCIONÁRIO ######################################
+
+### Criação de um novo funcionário
+POST http://localhost:5220/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "FuncionarioNome": "Seu nome",
+    "FuncionarioCpf" : "12345678912"
+}
+
+### Obtenção de todos os funcionários
+GET GET http://localhost:5220/api/funcionario/listar
+
+# FOLHA ############################################
+
+### Criação de uma nova folha
+POST POST http://localhost:5220/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "valor": 50,
+    "quantidade" : 1000,
+    "mes" : 10,
+    "ano" : 2023,
+    "funcionarioId" : 1
+}
+
+### Obtenção de todas as folhas
+GET GET http://localhost:5220/api/folha/listar
+
+### Obtenção de uma folha
+GET http://localhost:5220/api/folha/buscar/12345678912/10/2023

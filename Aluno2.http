@@ -1,0 +1,34 @@
+
+### Cadastrar Funcionarios
+POST http://localhost:5220/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+  "FuncionarioId": 5,
+  "FuncionarioNome": "Guilherme",
+  "FuncionarioCPF": "123.323.303-23"
+}
+
+
+
+### Listar Funcionarios
+GET http://localhost:5220/api/funcionario/listar
+###Listar folha
+GET http://localhost:5220/api/folha/listar
+
+### Cadastrar Folha
+POST http://localhost:5220/api/folha/cadastrar
+Content-Type: application/json
+
+{
+  "Valor": 5,
+  "Quantidade": 20,
+  "Mes": 1,
+  "Ano": 2024,
+  "FuncionarioFolha": {
+    "FuncionarioId": 1
+  }
+}
+
+### Buscar folha
+GET http://localhost:5220/api/folha/buscar/12345678912/10/2023
