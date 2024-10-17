@@ -4,9 +4,9 @@ POST http://localhost:5220/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-  "FuncionarioId": 5,
-  "FuncionarioNome": "Guilherme",
-  "FuncionarioCPF": "123.323.303-23"
+    
+    "FuncionarioNome": "Seu nome",
+    "FuncionarioCpf" : "12345678912"
 }
 
 
